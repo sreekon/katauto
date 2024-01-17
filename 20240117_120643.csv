@@ -1,0 +1,43 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite Checkers1,Chrome 120.0.0.0,,,17-01-2024 12:06:45,17-01-2024 12:07:25,39.786s,PASSED
+,,,,,,,
+Test Cases/MyCheckers_Moves,Chrome 120.0.0.0,,,17-01-2024 12:06:46,17-01-2024 12:07:22,36.845s,PASSED
+"openBrowser("""")",Chrome 120.0.0.0,Open the  Chrome Browser,,17-01-2024 12:06:46,17-01-2024 12:06:47,1.215s,PASSED
+"navigateToUrl(""https://www.gamesforthebrain.com/game/checkers/"")",Chrome 120.0.0.0,"Navigate to URL """"",,17-01-2024 12:06:47,17-01-2024 12:06:48,1.252s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Checkers_game/h1_Checkers""), ""Checkers"")",Chrome 120.0.0.0,"Verify that ""Checkers"" app is loaded successfully.",,17-01-2024 12:06:48,17-01-2024 12:06:50,1.540s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Checkers_game/p_Select an orange piece to move""), ""Select an orange piece to move."")",Chrome 120.0.0.0,Verify that player with Orange pieces can make the first move,,17-01-2024 12:06:50,17-01-2024 12:06:53,3.403s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkers_game/img_space42""), ""src"", ""https://www.gamesforthebrain.com/game/checkers/you1.gif"", 1, STOP_ON_FAILURE)",Chrome 120.0.0.0,Verfiy that orange piece is ready to be clicked,,17-01-2024 12:06:53,17-01-2024 12:06:54,0.294s,PASSED
+"click(findTestObject(""Checkers_game/img_space42""))",Chrome 120.0.0.0,Select the orange piece at 42 square to move.,,17-01-2024 12:06:54,17-01-2024 12:06:54,0.304s,PASSED
+delay(1),Chrome 120.0.0.0,Add a  wait ,,17-01-2024 12:06:54,17-01-2024 12:06:55,1.027s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkers_game/img_space42""), ""src"", ""https://www.gamesforthebrain.com/game/checkers/you2.gif"", 1, STOP_ON_FAILURE)",Chrome 120.0.0.0,Verfiy that orange piece is clicked and image state changed to bright,,17-01-2024 12:06:55,17-01-2024 12:06:55,0.472s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkers_game/img_space53""), ""src"", ""https://www.gamesforthebrain.com/game/checkers/gray.gif"", 1, CONTINUE_ON_FAILURE)",Chrome 120.0.0.0,Check if diagnol square is empty and orange piece can be moved,,17-01-2024 12:06:55,17-01-2024 12:06:56,0.286s,PASSED
+"click(findTestObject(""Checkers_game/img_space53""))",Chrome 120.0.0.0,Click on 53 square to move the orange piece at 42 to 53 square,,17-01-2024 12:06:56,17-01-2024 12:06:56,0.298s,PASSED
+delay(1),Chrome 120.0.0.0,Add a  wait ,,17-01-2024 12:06:56,17-01-2024 12:06:57,1.020s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkers_game/img_space53""), ""src"", ""https://www.gamesforthebrain.com/game/checkers/you1.gif"", 3, STOP_ON_FAILURE)",Chrome 120.0.0.0,Verify orange piece moved to 53 square,,17-01-2024 12:06:57,17-01-2024 12:06:57,0.510s,PASSED
+"waitForElementPresent(findTestObject(""Checkers_game/p_Make a move""), 2)",Chrome 120.0.0.0,"Verify thatOrange piece can make a move with ""Make a move."" message
+",,17-01-2024 12:06:57,17-01-2024 12:06:58,0.276s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space22""))",Chrome 120.0.0.0,Select the orange piece at 22 square to move.,,17-01-2024 12:06:58,17-01-2024 12:06:58,0.267s,PASSED
+delay(2),Chrome 120.0.0.0,Add a delay,,17-01-2024 12:06:58,17-01-2024 12:07:00,2.011s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space33""))",Chrome 120.0.0.0,Click on 33 square to move the orange piece at 22 to 33 square,,17-01-2024 12:07:00,17-01-2024 12:07:00,0.306s,PASSED
+delay(2),Chrome 120.0.0.0,Add a wait.,,17-01-2024 12:07:00,17-01-2024 12:07:02,2.018s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkers_game/img_space33""), ""src"", ""https://www.gamesforthebrain.com/game/checkers/gray.gif"", 2, STOP_ON_FAILURE)",Chrome 120.0.0.0,Verify that Orange piece in square33 is consumed by blue piece.,,17-01-2024 12:07:02,17-01-2024 12:07:03,0.264s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkers_game/img_space42""), ""src"", ""https://www.gamesforthebrain.com/game/checkers/me1.gif"", 2, STOP_ON_FAILURE)",Chrome 120.0.0.0,Verify that Blue piece filled in square 42 and offering  exchange to 51,,17-01-2024 12:07:03,17-01-2024 12:07:03,0.268s,PASSED
+"waitForElementPresent(findTestObject(""Checkers_game/p_Make a move""), 2)",Chrome 120.0.0.0,"Verify thatOrange piece can make a move with ""Make a move."" message
+",,17-01-2024 12:07:03,17-01-2024 12:07:03,0.257s,PASSED
+delay(2),Chrome 120.0.0.0,Add a wait.,,17-01-2024 12:07:03,17-01-2024 12:07:05,2.015s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space51""))",Chrome 120.0.0.0,Select the orange piece at 51 square to make an exhange with 42,,17-01-2024 12:07:05,17-01-2024 12:07:05,0.271s,PASSED
+delay(2),Chrome 120.0.0.0,Add a delay,,17-01-2024 12:07:05,17-01-2024 12:07:07,2.012s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space33""))",Chrome 120.0.0.0,Select square 33 to jump the blue piece in 42 - Test Case / Blue piece consumed,,17-01-2024 12:07:07,17-01-2024 12:07:08,0.287s,PASSED
+delay(3),Chrome 120.0.0.0,Add a delay.,,17-01-2024 12:07:08,17-01-2024 12:07:11,3.016s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space53_1""))",Chrome 120.0.0.0,Select the orange piece at 51 square to move.,,17-01-2024 12:07:11,17-01-2024 12:07:11,0.261s,PASSED
+delay(2),Chrome 120.0.0.0,Add a delay,,17-01-2024 12:07:11,17-01-2024 12:07:13,2.013s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space44""))",Chrome 120.0.0.0,Select 51 to move orange piece to 44 from  square 51,,17-01-2024 12:07:13,17-01-2024 12:07:13,0.301s,PASSED
+delay(2),Chrome 120.0.0.0,Add a delay,,17-01-2024 12:07:13,17-01-2024 12:07:15,2.022s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space62""))",Chrome 120.0.0.0,Select orange piece on square 62 to consume Blue piece on 53,,17-01-2024 12:07:15,17-01-2024 12:07:16,0.293s,PASSED
+delay(2),Chrome 120.0.0.0,Add a delay,,17-01-2024 12:07:16,17-01-2024 12:07:18,2.011s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/img_space44""))",Chrome 120.0.0.0,Select square 44 to jump the blue piece in  53 - Test Case / Blue piece consumed,,17-01-2024 12:07:18,17-01-2024 12:07:18,0.287s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Checkers_game/a_Restart""), ""Restart..."")",Chrome 120.0.0.0,Check if Restart link is available,,17-01-2024 12:07:18,17-01-2024 12:07:18,0.267s,PASSED
+"verifyElementClickable(findTestObject(""Object Repository/Checkers_game/a_Restart""))",Chrome 120.0.0.0,Check if Restart is  clickable ,,17-01-2024 12:07:18,17-01-2024 12:07:18,0.283s,PASSED
+"click(findTestObject(""Object Repository/Checkers_game/a_Restart""))",Chrome 120.0.0.0,Click to restart the checkers app,,17-01-2024 12:07:18,17-01-2024 12:07:19,0.666s,PASSED
+delay(3),Chrome 120.0.0.0,Add a delay,,17-01-2024 12:07:19,17-01-2024 12:07:22,3.019s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Checkers_game/p_Select an orange piece to move""), ""Select an orange piece to move."")",Chrome 120.0.0.0,"Verify that  ""Select an orange peice to move."" message is display to confirm app availability",,17-01-2024 12:07:22,17-01-2024 12:07:22,0.286s,PASSED
